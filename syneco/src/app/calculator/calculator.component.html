@@ -1,0 +1,51 @@
+<br><br><br>
+<div id="calc">
+  <div id="calc-background">
+    <div id="row-title"> 
+       <div>Calculadora</div>
+       <div id="text-historic"><a (click)="pressHistoric()">Histórico</a></div>
+    </div>
+    <div class="container">
+     <ng-historic id="ng-historic"></ng-historic>
+     <table id='tableCalc'> 
+        <tr> 
+          <td colspan="4" id="result">
+            <div>
+              <div class="operation">{{ subText }}</div>
+              {{ mainText }}
+            </div>
+        </tr> 
+        <tr> 
+          <td id="calc-buttons" class="ackey " (click)="allClear()">AC</td> 
+          <td id="calc-buttons" class="opkey" ><img class="icons" src="../assets/icons/ic_more_less_24px.svg" /></td>
+          <td id="calc-buttons" class="opkey" >%</td> 
+          <td id="calc-basic-operations" class="opkey" (click)="pressKey('/')"><img class="icons" src="../assets/icons/ic-div_24px.svg" /></td> 
+        </tr> 
+        <tr> 
+          <td id="calc-buttons" class="numkey" (click)="pressKey('7')">7</td> 
+          <td id="calc-buttons" class="numkey" (click)="pressKey('8')">8</td> 
+          <td id="calc-buttons" class="numkey" (click)="pressKey('9')">9</td> 
+          <td id="calc-basic-operations" class="opkey" (click)="pressKey('x')"><img class="icons" src="../assets/icons/ic_clear_24px.svg" /></td> 
+        </tr> 
+        <tr> 
+          <td id="calc-buttons" class="numkey" (click)="pressKey('4')">4</td> 
+          <td id="calc-buttons" class="numkey" (click)="pressKey('5')">5</td> 
+          <td id="calc-buttons" class="numkey" (click)="pressKey('6')">6</td> 
+          <td id="calc-basic-operations" class="opkey" (click)="pressKey('-')"><img class="icons" src="../assets/icons/ic_remove_24px.svg" /></td>  
+        </tr> 
+        <tr> 
+          <td id="calc-buttons" class="numkey" (click)="pressKey('1')">1</td> 
+          <td id="calc-buttons" class="numkey" (click)="pressKey('2')">2</td> 
+          <td id="calc-buttons" class="numkey" (click)="pressKey('3')">3</td> 
+          <td id="calc-basic-operations" class="opkey" (click)="pressKey('+')"><img class="icons" src="../assets/icons/ic_add_24px.svg" /></td>  
+        </tr> 
+        <tr> 
+          <td id="calc-buttons" colspan="2" class="numkey" (click)="pressKey('0')">0</td> 
+          <td id="calc-buttons" class="numkey" (click)="pressKey(',')">,</td> 
+          <td id="calc-equal" class="equalkey" (click)="getAnswer()"><img class="icons" src="../assets/icons/ic_equal_24px.svg" /></td>  
+        </tr>
+     </table>
+    </div>
+    <div id="btn"><button class="btn" ng-click="">Voltar</button></div>
+ </div>
+</div>

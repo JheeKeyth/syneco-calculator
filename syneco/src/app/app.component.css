@@ -1,0 +1,46 @@
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    background-color: #0B7197;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin-left: 10;
+  }
+
+  .toolbar #cog-icon {
+    margin: 0 16px;
+  }
+
+  .toolbar #cog-icon:hover {
+    opacity: 0.8;
+  }
+
+  .toolbar #calculator-icon {
+    margin: 0 10px;
+    color: white;
+  }
+
+  .toolbar #calculator-icon:hover {
+    opacity: 0.8;
+  }

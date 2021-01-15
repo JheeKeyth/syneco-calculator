@@ -1,0 +1,26 @@
+#historic{
+    position: absolute;
+    background-color:#0B7197; 
+    overflow: auto;
+    text-align: right;
+    width: 393px;
+    height: 732px;
+    margin: 20px 20px;
+    font: normal normal normal 58px/70px Roboto;
+    color: #FFFFFF;
+    
+}
+
+.equation{
+    font: normal normal normal 28px/34px Roboto;
+}
+
+.result{
+    font: normal normal normal 58px/70px Roboto;
+}
+
+
+.box {
+    padding-right: 25px;
+    padding-top: 25px;
+}

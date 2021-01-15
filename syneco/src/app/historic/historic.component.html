@@ -1,0 +1,10 @@
+<div id="historic">
+  <div class="box" *ngFor="let item of historic"> 
+    <div class="equation">
+      {{item.expression + " = "}}
+    </div>
+    <div class="result">
+      {{item.result}}
+    </div>
+  </div>
+</div>
